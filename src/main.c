@@ -88,20 +88,20 @@ void main(void){
   CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1);
   CLK_PeripheralClockConfig(CLK_PERIPHERAL_SPI, DISABLE);
 #ifdef WITH_I2C
-	CLK_PeripheralClockConfig(CLK_PERIPHERAL_I2C, ENABLE);
+  CLK_PeripheralClockConfig(CLK_PERIPHERAL_I2C, ENABLE);
 #else
-	CLK_PeripheralClockConfig(CLK_PERIPHERAL_I2C, DISABLE);
+  CLK_PeripheralClockConfig(CLK_PERIPHERAL_I2C, DISABLE);
 #endif
-	CLK_PeripheralClockConfig(CLK_PERIPHERAL_ADC, DISABLE);
-	CLK_PeripheralClockConfig(CLK_PERIPHERAL_AWU, DISABLE);
+  CLK_PeripheralClockConfig(CLK_PERIPHERAL_ADC, DISABLE);
+  CLK_PeripheralClockConfig(CLK_PERIPHERAL_AWU, DISABLE);
 #ifdef WITH_UART
-	CLK_PeripheralClockConfig(CLK_PERIPHERAL_UART1, ENABLE);
+  CLK_PeripheralClockConfig(CLK_PERIPHERAL_UART1, ENABLE);
 #else
-	CLK_PeripheralClockConfig(CLK_PERIPHERAL_UART1, DISABLE);
+  CLK_PeripheralClockConfig(CLK_PERIPHERAL_UART1, DISABLE);
 #endif
-	CLK_PeripheralClockConfig(CLK_PERIPHERAL_TIMER1, DISABLE);
-	CLK_PeripheralClockConfig(CLK_PERIPHERAL_TIMER2, DISABLE);
-	CLK_PeripheralClockConfig(CLK_PERIPHERAL_TIMER4, ENABLE);
+  CLK_PeripheralClockConfig(CLK_PERIPHERAL_TIMER1, DISABLE);
+  CLK_PeripheralClockConfig(CLK_PERIPHERAL_TIMER2, DISABLE);
+  CLK_PeripheralClockConfig(CLK_PERIPHERAL_TIMER4, ENABLE);
 
 #ifdef WITH_I2C
   /* Configure I2C */

@@ -63,7 +63,7 @@ INTERRUPT_HANDLER(I2C_IRQHandler, 19){
       I2C_SendData(BYTE_1(keyState));//higher byte
       break;
     case I2C_EVENT_SLAVE_ACK_FAILURE://0x0004: AF flag - master does not want more data
-      I2C->SR2 &= ~I2C_SR2_AF;	// clear AF
+      I2C->SR2 &= ~I2C_SR2_AF;// clear AF
       break;
     // ******* Slave receiver *******
     case I2C_EVENT_SLAVE_RECEIVER_ADDRESS_MATCHED://0x0202: BUSY and ADDR flags
