@@ -1,6 +1,6 @@
-## STM8 as I2C matrix keyboard controler
+## STM8 as I2C matrix keyboard controller
 
-Firmware for STM8 to act as matrix keyboard controler with I2C interface
+Firmware for STM8 to act as matrix keyboard controller with I2C interface
 
 - Only simplest reporting over I2C implemented (current state of matrix keys)
 - Key states are scaned periodicaly and some state change buffering can be implemented
